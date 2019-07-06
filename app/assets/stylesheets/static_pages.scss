@@ -1,0 +1,20 @@
+// Place all the styles related to the StaticPages controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.navigation a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px; /*from W3 schools, https://www.w3schools.com/howto/howto_css_searchbar.asp*/
+}
+#image {
+	background-image: url("background-cactus-decor.jpg");
+	background-size: 1200px 1000px;
+	}
+#content {
+	text-align: center;
+}
+#content.a {
+	
+}
