@@ -1,12 +1,10 @@
-<% provide(:title, "About") %>
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
 
-	<title>About</title>
+	<title>Contact</title>
 
 	<style>
 		@import "style.css";
@@ -15,12 +13,17 @@
 </head>
 
 <body>
-	
-<nav class="navigation">
-	<input type="text" placeholder="Search.."></li>
-	<a href="Products.html">About</a>
-	<a href="Login.html">Contact</a>
-	<a href="Shopping cart.html">Login</a>
-</nav>
 
-</body>
+	<div id="header">
+	</div>
+
+  <div id="content">
+      
+      <% content_for :content do %>
+		    <h1>About</h1>
+		    <h2>Bringing real affordable floors to you</h2>
+      <% end %>
+    
+  </div>
+  </body>
+</html>

@@ -1,5 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
+<% provide(:title, "Home") %>
 
 <head>
 	<meta charset="utf-8">
@@ -9,25 +8,23 @@
 	<style>
 		@import "style.css";
 	</style>
-
+  
 </head>
 
 <body>
 	
-<nav class="navigation">
-	<input type="text" placeholder="Search.."></li>
-	<a href="Products.html">About</a>
-	<a href="Login.html">Contact</a>
-	<a href="Shopping cart.html">Login</a>
-</nav>
-
-	<div id="image">
-	<div id="content">
-		<h1>The Timber Floor Shop</h1>
-		<h2>For the real hardwood feel</h2>
-		<a href="#">SHOP NOW</a>
-	</div> 	
-	</div>
+  <div id="header">
+  </div>
+    
+  <div id="content">
+      
+      <% content_for :content do %>
+		    <h1>The Timber Floor Shop</h1>
+		    <h2>For the real hardwood feel</h2>
+		    <a href="/items">SHOP NOW</a>
+      <% end %>
+    
+  </div>     
 
 </body>
 </html>
