@@ -1,8 +1,11 @@
 Rails.application.routes.draw do
-  get 'items/:id’ => ’items#show ’
-  resources :items
-  get 'static_pages/home'
-  get 'static_pages/contact'
-  get 'static_pages/about'
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+    root :to => 'static_pages#home'
+    get '/home' => 'static_pages#home'
+    get '/contact' => 'static_pages#contact'
+    get '/about' => 'static_pages#about'
+  
+    resources :items, only: [:index, :show, :edit, :new, :_form]
+    get '/items' => 'items#index'
+    get 'items/:id' => 'items#show'
+  # resource :basket, only: [:show, :update, :destroy]
 end
